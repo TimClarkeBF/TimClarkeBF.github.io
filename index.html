@@ -1,14 +1,17 @@
 <html>
   <head>
     <title>Title</title>
-<script  >
-    useless('Amigo');
-    window.onload=useless('Amigo')
+<script type="text/javascript">
+document.getElementById('click_me').addEventListener("click", function(event) {
+    (function(event) {
+        alert(this);
+    }).call(document.getElementById('click_me'), event);
+});
 </script>
 
    </head>
   <body>
-    <h1>Hello World example</h1>
+    <h1>Hello d example</h1>
     <p>
       Page
     </p>
